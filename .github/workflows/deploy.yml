@@ -1,10 +1,7 @@
 name: CI/CD HTML + CSS to GitHub Pages
 
 on:
-  workflow_dispatch :
-      #branches:
-        # - main
-
+  workflow_dispatch:
 permissions:
   contents: read
   pages: write
