@@ -1,9 +1,9 @@
 name: CI/CD HTML + CSS to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch :
+      #branches:
+        # - main
 
 permissions:
   contents: read
@@ -45,7 +45,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-         - name: Send email on success
+      - name: Send email on success
         if: success()
         uses: dawidd6/action-send-mail@v3
         with:
